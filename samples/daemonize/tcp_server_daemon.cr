@@ -21,5 +21,3 @@ end
 server = TCPServer.new "127.0.0.1", 9000
 puts "listen on 127.0.0.1:9000"
 loop { spawn process(server.accept) }
-
-
